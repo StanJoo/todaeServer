@@ -1,0 +1,52 @@
+<!-- views/home/login.ejs -->
+<!-- login 화면 구성 -->
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <% include ../partials/head %>
+ </head>
+ <body>
+  <% include ../partials/nav %>
+
+  <div class="container home home-login">
+
+
+   <form class="login-form form-horizontal" action="/login" method="post">
+    <div class="contentBox">
+     <h2 class="contentBoxTop">토대</h2>
+     <fieldset>
+      <div class="form-group <%= (errors.username)?'has-error':'' %>">
+       <label for="username" class="col-sm-3 control-label"></label>
+       <div class="col-sm-9">
+        <input class="form-control" type="text" id="username" name="username" placeholder="ID" value="<%= username %>">
+        <% if(errors.username){ %>
+         <span class="help-block"><%= errors.username %></span>
+        <% } %>
+       </div>
+      </div>
+      <div class="form-group <%= (errors.password)?'has-error':'' %>">
+       <label for="password" class="col-sm-3 control-label"></label>
+       <div class="col-sm-9">
+        <input class="form-control" type="password" id="password" placeholder="password" name="password" value="">
+        <% if(errors.password){ %>
+         <span class="help-block"><%= errors.password %></span>
+        <% } %>
+       </div>
+      </div>
+      <% if(errors.login){ %>
+      <% } %>
+     </fieldset>
+    </div>
+    <label class="col-sm-3 control-label"></label>
+    <div class="buttons">
+     <input class="btn btn-lg btn-default col-xs-12 lo" type="submit" value="로그인">
+    </div>
+   </form>
+   <label class="col-sm-3 control-label"></label>
+   <div class="search">
+    <a href="#">비밀번호 찾기</a> | <a href="/users/new">회원가입</a>
+   </div>
+  </div> <!-- container end -->
+ </body>
+</html>

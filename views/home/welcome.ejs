@@ -1,0 +1,34 @@
+<!-- views/home/welcome.ejs -->
+<!-- home 화면 구성 -->
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <% include ../partials/head %>
+ </head>
+ <body>
+  <div class="container home home-welcome">
+    <!-- 큰 글씨용 CSS class -->
+   <div class="jumbotron">
+    <h1><strong>토대</strong></h1>
+    <P><strong>어떤 땅에서 농사 짓고<br>싶으신가요?</strong></p>
+   </div>
+   <form class="form-inline">
+    <div class="form-group">
+     <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+     <div class="input-group ">
+      <div class="input-group-addon searchInput input-lg">ꎤ</div>
+      <input type="text" class="form-control searchInput input-lg" id="exampleInputAmount" placeholder="지역 검색">
+     </div>
+    </div>
+   </form>
+   <div class="contentList">
+    <strong>관심지역 최근 땅</strong>
+    <a class="more" href="#">더보기 ></a>
+   </div>
+  </div>
+
+
+  <% include ../partials/nav %>
+ </body>
+</html>

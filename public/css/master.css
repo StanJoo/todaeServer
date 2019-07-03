@@ -1,0 +1,174 @@
+/* public/css/master.css */
+.jumbotron {
+    padding-top: 20px;
+
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: inherit;
+    background-color: white;
+}
+/* global 스타일 */
+.buttons form{
+  display: inline-block;
+ }
+ /* text길이>width길이 인 경우 ...로 처리함 */
+.ellipsis{
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ }
+
+/* home 스타일 */
+.home h1{
+    color:  rgb(26, 188, 156);
+  }
+  /* login 스타일 */
+  .home-login{
+    max-width: 330px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+   }
+
+  /* post 스타일 */
+  .post h1 {
+    color: rgb(17, 48, 134);
+    text-align: center;
+   }
+   .post .post-body{
+    white-space: pre-line;
+   }
+   .post .posts .date{
+    width: 100px;
+   }
+   .post .posts .author{
+    text-align: center;
+    width: 80px;
+   }
+   .post-index .posts{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    table-layout: fixed;
+   }
+
+
+/* user 스타일 */
+.user {
+  max-width: 320px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+ }
+ .user-index ul{
+  margin: 0;
+  padding: 3px 12px;
+ }
+ .user-index ul:after {
+  content: "";
+  display: block;
+  clear: both;
+ }
+ .user-index ul li{
+  display: inline-block;
+  list-style-type: none;
+ }
+ .user-index ul li a{
+  display: inline-block;
+  text-decoration:none;
+  margin: 3px;
+  background-color: #eee;
+  padding: 3px 10px;
+  border-radius: 3px;
+ }
+ .user-index ul li a:hover{
+  background-color: #ccc;
+ }
+ .user-edit hr{
+  margin-top: 5px;
+  margin-bottom: 11px;
+ }
+
+/* 하단 nav */
+.navbar {
+    background-color: #f5f5f5;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    border: 0;
+}
+
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    width:20%;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.navbar a.active {
+    background-color: rgb(26, 188, 156);
+    color: white;
+}
+
+/* login */
+.home-login {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+}
+
+.lo {
+    background-color: rgb(26, 188, 156);
+    color: #f5f5f5;
+}
+
+.contentBoxTop {
+    text-align:center;
+    color:rgb(26, 188, 156);
+}
+
+.search{
+    font-size:17px;
+    text-align: center;
+}
+
+.search  a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+.user-new{
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+}
+
+.searchInput {
+    border: 1px solid rgb(26, 188, 156);
+}
+
+.contentList a {
+    color: gray;
+    text-decoration: none;
+    float: right;
+}
+
+.contentList strong {
+    font-size: 12pt;
+}
