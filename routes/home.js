@@ -16,6 +16,7 @@ router.get("/board", (req, res) => {
   res.render("home/board");
 });
 
+
 // Login
 router.get("/login", (req, res) => {
     const username = req.flash("username")[0];
@@ -58,5 +59,6 @@ router.get("/logout", (req, res) => {
 req.logout();
 res.redirect("/");
 });
+
 
 module.exports = router;
